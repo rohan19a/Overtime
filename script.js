@@ -26,7 +26,6 @@ function previous() {
         pageNum -= 1;
     }
     console.log(pageNum);
-
 }
 
 function next() {
@@ -48,20 +47,68 @@ D - t = delta(t)
 
 p(f, delta(t)) */
 
+//D : Due date
+//f : Expected Amount of time to finish
+//F : Current time
+ 
+/*
+(-log(dead line - current time)
+ 
+P (d, f, t)
+ 
+D - t = delta(t)
+ 
+p(f, delta(t)) */
+ 
+ 
+ 
+ 
+ 
+ 
 class Item {
-    constructor(name, progress, timeToEnd, deadline) {
+    constructor(name, progress, timeReq, deadline) {
         var time = new Date();
         this.name = name;
         this.progress = progress;
-        this.timeToEnd = timeToEnd;
-        this.deadline = deadline;
-        this.time = time;
+        this.timeReq = timeReq;
+        this.deadline = deadline;//user input here
+ 
+// returns the priority of a task
+function priority(f, delta) {
+    let logVal = Math.log(delta)
+    return f*(Math.pow(10,logVal)); // To get the inverse/anti log, raise value given by log func to the power 10
+    // how to weight with time required to do? maybe multiply time by log output - rohan
+}
+ 
+//Delta function, returns the deadline - current time in minutes, input is the deadline
+function delta(dead) {
+    var time = new Date();
+    //done in minutes
+    return(Date.dateDiff(n,time,dead));
+ 
+}
+ 
+function setDeadline(year, month, day, hours, time) {
+    //We need this to be determined by the user
+ 
+    deadline = new Date(year, month, day, hours, time, 0, 0);
+}
+ 
+//conversions for milliseconds, give credit to https://www.htmlgoodies.com/javascript/calculating-the-difference-between-two-dates-in-javascript/
+Date.dateDiff = function(datepart, fromdate, todate) {  
+    datepart = datepart.toLowerCase();  
+    var diff = todate - fromdate;  
+    var divideBy = { w:604800000,
+                     d:86400000,
+                     h:3600000,
+                     n:60000,
+                     s:1000 };  
+   
+    return Math.floor( diff/divideBy[datepart]);
+}
     }
 }
 
 
 
-function priority(f, delta) {
-    let logVal = -1 * Math.log(delta);
-}
 
