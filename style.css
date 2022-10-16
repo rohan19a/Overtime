@@ -14,9 +14,10 @@ html, body {
 
   .box {
     display: inline-block;
-    width: 100px;
-    height: 100px;
-    padding: 2rem;
+    width: 150px;
+    height: 170px;
+    padding: 5px;
+    margin-bottom: 2px;
     background: red;
     color: white;
     text-align: center;
