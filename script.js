@@ -12,7 +12,7 @@ function getInfo() {
 
 function openForm() {
     document.getElementById("myForm").style.display = "block";
-  }
+}
   
 function closeForm() {
     document.getElementById("myForm").style.display = "none";
@@ -45,6 +45,20 @@ function getX(x, id) {
     con.query(query, [id], (err, rows) => {
         if (err) throw err;
     });
+}
+
+
+
+
+function openLogin() {
+    document.getElementById(".box").style.display = "block";
+    document.getElementById(".form").style.display = "block";
+    document.getElementById(".button-17").style.display = "block";
+}
+
+
+function closeLogin() {
+    document.getElementById("myForm").style.display = "block";
 }
 
 //QbC3LxWEyCLoJS9k8nwjbQ
