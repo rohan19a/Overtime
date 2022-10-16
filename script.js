@@ -14,7 +14,7 @@ function openForm() {
     document.getElementById("myForm").style.display = "block";
   }
   
-  function closeForm() {
+function closeForm() {
     document.getElementById("myForm").style.display = "none";
 }
 
@@ -38,6 +38,9 @@ var dict = {};
 function getpos(num) {
     return dict[num];
 }
+
+//QbC3LxWEyCLoJS9k8nwjbQ
+//roach password
 
 
 
