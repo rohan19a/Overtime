@@ -4,11 +4,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
+  <link rel="icon" type="image.png" href="./images/theta.png">
   <title>Overtime</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
   <title>Overtime</title>
 </head>
+
+
 <body>
+    
 
 
     <script src="script.js"></script>
@@ -36,8 +40,6 @@
 
 
 
-<button class="open-button" onclick="openForm()">Open Form</button>
-
 <div class="form-popup" id="myForm">
     <form action="/action_page.php" class="form-container">
       <h1>Add Item</h1>
@@ -54,15 +56,20 @@
       <label for="psw"><b>Due Date</b></label>
       <input type="password" placeholder="Enter Password" name="psw" required>
   
-      <button type="submit" class="btn">Submit</button>
-      <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+      <button type="submit" class="button-17">Submit</button>
+      <button type="button" class="button-17" onclick="closeForm()">Close</button>
     </form>
   </div>
 
+
+
 <div>
-    <button onclick="next()">NEXT</button>
-    <button onclick="previous()">PREVIOUS</button>
+    <button class="button-17" onclick="openForm()">Open Form</button>
+
+
 </div>
+<div>    <button class="button-17" role="button" onclick="next()">Next</button>
+    <button class="button-17" role="button" onclick="previous()">Previous</button></div>
 
 </body>
 

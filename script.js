@@ -33,10 +33,18 @@ function next() {
     console.log(pageNum);
 }
 
-var dict = {};
+function getTitle(id) {
+    query = con.query("SELECT title from tasks where id = ?", id);
+    con.query(query, [id], (err, rows) => {
+        if (err) throw err;
+    });
+}
 
-function getpos(num) {
-    return dict[num];
+function getX(x, id) {
+    query = con.query("SELECT x from tasks where id = ?", id);
+    con.query(query, [id], (err, rows) => {
+        if (err) throw err;
+    });
 }
 
 //QbC3LxWEyCLoJS9k8nwjbQ

@@ -1,12 +1,11 @@
 const { query } = require("express");
 
 signup = (req, res) => {
-    email = null;
-    password = null;
-    id = null;
+    email = this.email;
+    password = this.password;
 
-    var input = 
-    var queryReq = con.query("SELECT id from tbl_user WHERE email = ?", email)
+    
+    queryReq = con.query("SELECT id from tbl_user WHERE email = ?", email)
     if (queryReq !== null) {
         let query = `INSERT INTO tbl_user 
         (email, password) VALUES (?, ?);`;
