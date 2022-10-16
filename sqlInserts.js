@@ -4,8 +4,8 @@ let singleRowInsert = () => {
         (email, id, this_id, title, dates, dueDate, timeNeeded, vals) VALUES (?, ?, ?, ?, ?, ?, ?);`;
   
     // Value to be inserted
-    let title = "Pratik";
-    let dates = "My Address";
+    let title = "";
+    let dates = "";
     let dueDate = "";
     let timeNeeded = "";
     let vals = "";
@@ -14,10 +14,11 @@ let singleRowInsert = () => {
     let this_id = "";
   
     // Creating queries
-    db_con.query(query, [email, id, this_id,
+    con.query(query, [email, id, this_id,
         title, dates, dueDate, timeNeeded, vals], (err, rows) => {
         if (err) throw err;
         console.log("Row inserted with id = "
             + rows.id);
     });
 };
+

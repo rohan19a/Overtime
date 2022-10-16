@@ -14,16 +14,10 @@ CREATE TABLE tasks (
 DROP TABLE IF EXISTS `tbl_user`;
 CREATE TABLE `tbl_user` (
   `id` bigint NOT NULL AUTO_INCREMENT,
-  `social_id` varchar(256) NOT NULL,
   `email` varchar(128) NOT NULL,
   `password` varchar(60) NOT NULL,
   `mobile_number` varchar(15) NOT NULL,
   `login_type` enum('S','F','G') NOT NULL,
-  `changepwdate` datetime NOT NULL,
-  `is_card` enum('0','1') NOT NULL,
-  `version` varchar(8) NOT NULL,
-  `language` varchar(32) NOT NULL,
-  `last_login` datetime NOT NULL,
   `login_status` enum('Offline','Online') NOT NULL,
   `is_active` enum('1','0') NOT NULL,
   `is_deleted` enum('0','1') NOT NULL,
