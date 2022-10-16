@@ -1,5 +1,5 @@
 html, body {
-    background-color: rgba(77, 226, 196, 0.788);
+    background-color: hsla(180, 2%, 10%, 0.788);
   }
   
 html, body {
@@ -13,13 +13,15 @@ html, body {
 
 
   .box {
-    display: inline-block;
-    width: 150px;
-    height: 170px;
-    padding: 5px;
-    margin-bottom: 2px;
-    background: green;
+    display: inline-table;
+    width: 130px;
+    height: 150px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: white;
     color: white;
     text-align: center;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
   }
+  
   

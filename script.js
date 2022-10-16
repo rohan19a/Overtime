@@ -1,9 +1,13 @@
+vals = 0;
 
 
-function Add() {
-    INSERT INTO table_name
+var lengthOfName = 0;
 
-    return x 
+document.getElementById('output').innerHTML = lengthOfName;
+
+
+function Add(item) {
+    con.query("INSERT INTO tasks VALUES(this.name, this.progress, this.timeToEnd, this.deadline, this.time)"); 
 }
 
 //D : Due date 

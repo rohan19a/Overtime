@@ -4,5 +4,8 @@ CREATE TABLE tasks (
     dates DATETIME,
     dueDate DATETIME,
     timeNeeded INT,
+    vals FLOAT(10, 10),
 )
+
+
 
