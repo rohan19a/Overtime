@@ -1,14 +1,23 @@
-vals = 0;
-
-
-var lengthOfName = 0;
-
-document.getElementById('output').innerHTML = lengthOfName;
-
-
-function Add(item) {
+function Add(Item) {
     con.query("INSERT INTO tasks VALUES(this.name, this.progress, this.timeToEnd, this.deadline, this.time)"); 
 }
+
+function getInfo() {
+    var x = document.getElementById("myForm").elements[0].value;
+    document.getElementById("demo").innerHTML = x;
+    console.log(x);
+  }
+
+function openForm() {
+    document.getElementById("myForm").style.display = "block";
+  }
+  
+  function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+}
+
+let s = 1;
+document.getElementById("name").innerHTML = s;
 
 //D : Due date 
 //f : Expected Amount of time to finish 
@@ -38,6 +47,5 @@ class Item {
 
 function priority(f, delta) {
     let logVal = -1 * Math.log(delta);
-
-
 }
+

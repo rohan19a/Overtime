@@ -8,11 +8,12 @@
   <link href="style.css" rel="stylesheet" type="text/css" />
   <title>Overtime</title>
 </head>
-<body></body>
+<body>
+    <script src="script.js"></script>
 
-
-
-<div class="box" id="one">One</div>
+<div class="box" id="one">
+    <h1>z<span id="s"></span></h1>
+</div>
     <!--<p id="output"></p> -->
 
 
@@ -34,13 +35,29 @@
 <div class="box" id="thirteen">thirteen</div>
 <div class="box" id="fourteen">fourteen</div>
 
-<div class="box" id="fourteen">
-    
-    <script src="script.js"></script>
-<button onclick="Add()">+</button>
 
-</div>
+<button class="open-button" onclick="openForm()">Open Form</button>
 
+<div class="form-popup" id="myForm">
+    <form action="/action_page.php" class="form-container">
+      <h1>Add Item</h1>
+  
+      <label for="email"><b>Name</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+  
+      <label for="psw"><b>Due Date</b></label>
+      <input type="password" placeholder="Due Date" name="psw" required>
+
+      <label for="psw"><b>Time Needed</b></label>
+      <input type="password" placeholder="Time Needed" name="psw" required>
+
+      <label for="psw"><b>Due Date</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+  
+      <button type="submit" class="btn">Submit</button>
+      <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    </form>
+  </div>
 
 <div>
     <button onclick="previous()">NEXT</button>
@@ -48,7 +65,6 @@
 </div>
 
 </body>
-
 
 
 </html>
