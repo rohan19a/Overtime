@@ -1,13 +1,13 @@
-let singleRowInsert = () => {
+let singleRowInsert (Item x) => {
   
     let query = `INSERT INTO tasks 
         (email, id, this_id, title, dates, dueDate, timeNeeded, vals) VALUES (?, ?, ?, ?, ?, ?, ?);`;
   
     // Value to be inserted
-    let title = "";
-    let dates = "";
-    let dueDate = "";
-    let timeNeeded = "";
+    let title = x.title;
+    let dates = this.dates;
+    let dueDate = this.dueDate;
+    let timeNeeded = this.;
     let vals = "";
     let email = "";
     let id = "";
