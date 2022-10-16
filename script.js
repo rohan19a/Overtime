@@ -59,12 +59,6 @@ P (d, f, t)
 D - t = delta(t)
  
 p(f, delta(t)) */
- 
- 
- 
- 
- 
- 
 class Item {
     constructor(name, progress, timeReq, deadline) {
         var time = new Date();
