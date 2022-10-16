@@ -24,7 +24,3 @@ CREATE TABLE `tbl_user` (
   `insertdate` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=64 DEFAULT CHARSET=utf8;
-
-
-
-
