@@ -33,6 +33,13 @@ function next() {
     console.log(pageNum);
 }
 
+var dict = {};
+
+function getpos(num) {
+    return dict[num];
+}
+
+
 
 //D : Due date 
 //f : Expected Amount of time to finish 

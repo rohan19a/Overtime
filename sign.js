@@ -1,6 +1,5 @@
-var dict = {};
-
-function getpos(num) {
-    return dict[num];
-}
-
+if (typeof(Storage) !== "undefined") {
+    // Code for localStorage/sessionStorage.
+  } else {
+    // Sorry! No Web Storage support..
+  }
