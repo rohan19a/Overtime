@@ -1,5 +1,8 @@
+
+
 function Add() {
-    console.log("h");
+
+    return x 
 }
 
 //D : Due date 
