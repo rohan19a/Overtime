@@ -1,0 +1,22 @@
+{
+  "name": "overtime",
+  "version": "1.0.0",
+  "description": "too much hax",
+  "main": "customer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rohan19a/Overtime.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rohan19a/Overtime/issues"
+  },
+  "homepage": "https://github.com/rohan19a/Overtime#readme",
+  "dependencies": {
+    "server": "^1.0.37"
+  }
+}
