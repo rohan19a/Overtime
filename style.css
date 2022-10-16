@@ -9,3 +9,16 @@ html, body {
     padding: 25px;
     border: 5px white;
   }
+
+
+
+  .box {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    padding: 2rem;
+    background: red;
+    color: white;
+    text-align: center;
+  }
+  

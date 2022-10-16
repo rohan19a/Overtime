@@ -15,11 +15,6 @@ D - t = delta(t)
 
 p(f, delta(t)) */
 
-
-
-
-
-
 class Item {
     constructor(name, progress, timeToEnd, deadline) {
         var time = new Date();
@@ -27,8 +22,10 @@ class Item {
         this.progress = progress;
         this.timeToEnd = timeToEnd;
         this.deadline = deadline;
+        this.time = time;
     }
 }
+
 
 
 function priority(f, delta) {
