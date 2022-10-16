@@ -1,6 +1,7 @@
 
 
 function Add() {
+    INSERT INTO table_name
 
     return x 
 }
