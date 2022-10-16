@@ -1,3 +1,5 @@
+var pageNum = 0;
+
 function Add(Item) {
     con.query("INSERT INTO tasks VALUES(this.name, this.progress, this.timeToEnd, this.deadline, this.time)"); 
 }
@@ -18,6 +20,20 @@ function openForm() {
 
 let s = 1;
 document.getElementById("name").innerHTML = s;
+
+function previous() {
+    if (pageNum >= 1) {
+        pageNum -= 1;
+    }
+    console.log(pageNum);
+
+}
+
+function next() {
+    pageNum = pageNum + 1;
+    console.log(pageNum);
+}
+
 
 //D : Due date 
 //f : Expected Amount of time to finish 
